@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZYMMY</title>
+    <link rel="icon" type="image/x-icon" href="logo-2.png" style="height: 50%; width:50%;border-radius: 50%;">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+<style>
+.list-item{
+    text-decoration: none;
+    display: inline-block;
+}
+.righttop{
+    position: absolute;
+    left: 70%;
+    top: 7%;
+
+}
+.txtclr{
+    color: red;
+    font-weight: 400;
+}
+.navbar1{
+    background-color: black;
+    /* position: fixed; 
+    z-index: 1000000; */
+}
+.navtxt{
+    font-family: "Teko", sans-serif;
+    font-size: 25px;
+    
+     
+}
+.input-group{
+    width: 15%;
+    /* background-color: black; */
+    color: gray;
+}
+.form-control{
+  border: 1px solid rgb(24, 24, 24);
+    border-right: none !important;
+    
+}
+.input-group-text{
+    border-left: none !important;
+  border: 1px solid rgb(24, 24, 24);
+
+    
+
+}
+/* <-- banner setion --> */
+.img1{
+    position: absolute;
+    top: -13%;
+    left: 40%;
+}
+.img01{
+    position: absolute;
+    top: -13%;
+    left: 40%;
+}
+.numcar{
+    font-size: 13em;
+    font-weight: bolder;
+    opacity: .1;
+    color: rgb(141, 140, 140);
+    font-family: "Teko", sans-serif;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+
+
+}
+.lettercar{
+    font-size: 8em;
+    font-weight: bolder;
+    opacity: .2;
+    color: rgb(141, 140, 140);
+    font-family: "Teko", sans-serif;
+    position: absolute;
+    top: 55%;
+    left:41%;
+}
+.smalltext{
+    color: red;
+    position: absolute;
+    top: 32%;
+    font-weight: bold;
+    left: 20.5%;
+}
+.txtcar{
+    position: absolute;
+    /* border: 1px solid black; */
+    width: 28%;
+    height: 28vh;
+    font-family: "Teko", sans-serif;
+    font-size: 4em;
+    font-weight:bolder;
+    text-align:left;
+    top: 36%;
+    left: 20%;
+}
+.askbox{
+    position: absolute;
+    top: 10%;
+    /* height: 8vh;
+    width: 10%; */
+    top: 60%;
+    left: 20%;
+    background-color: red;
+    color: white;
+    font-family:sans-serif;
+    font-size: x-small;
+    font-weight: 100;
+
+}
+/* <!-- section2 --> */
+.leftboxs2{
+    font-family: "Teko", sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    color: black;
+    letter-spacing: 8px;
+
+}
+.rightboxs2{
+    font-family: "Teko", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    
+    /* line-height: 6%; */
+}
+.rightboxs2-2{
+    font-family:  sans-serif;
+    font-size: 18px;
+line-height: .5%;
+}
+.buttons2{
+    background-color: red;
+    color: white;
+    border-radius: 0%;
+    font-size: 20px;
+    position:absolute;
+    left: 64%;
+    top: 28%;
+}
+.aerobics{
+    position: absolute;
+    /* height: 8vh;
+    width: 10%; */
+    top: 90%;
+    left: 4%;
+    background-color: white;
+    color: black;
+    /* border: 1px solid black; */
+    font-family:sans-serif;
+    font-size: 40px;   
+    font-weight: 100;
+    text-align: left;
+
+}
+.aero{
+    position: absolute;
+    background-color: white;
+    font-family: "Audiowide", sans-serif;
+    
+
+}
+.sec1pic{
+position: absolute;
+left: 0%;
+}
+/* sec3 */
+.im{
+    opacity: .4;
+
+  }
+  .im:hover{
+    opacity: 1;
+    border: 2px solid white;
+    
+  }
+  .ourgallery{
+    text-align: center;
+    letter-spacing: 4px;
+    color: red;
+    font-family: "Teko", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+  }
+.pw{
+  text-align: center;
+
+  letter-spacing: 6px;
+  color: white;
+  font-family: "Teko", sans-serif;
+  font-weight: 700;
+
+}
+.mains3{
+  
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-family: "Heebo", sans-serif;
+    
+    padding-top: 120px;
+    padding-bottom: 90px;
+    background-size: cover;
+    background-image: url(https://thewebmax.org/zymmy/images/background/bg5.jpg);
+}
+/* sec4 */
+.mains4{
+  
+  --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-family: "Heebo", sans-serif;
+  
+  /* padding-top: 100px;
+  padding-bottom: 90px; */
+  background-size: cover;
+  background-image: url(slide1.jpg);
+}
+.prombox{
+  background-color: red ;
+}
+.button{
+  border-radius: 0;
+  color: white;
+  background-color: black;
+}
+.btneffect{
+  color: white;
+  text-decoration: none;
+
+}
+.btneffect:hover{
+  color: white;
+  text-decoration: none;
+  transform: rotate(20deg);
+}
+.promli{
+    font-weight:bold;
+    margin-left: -5%;
+    font-size: 14px;
+    line-height: 2.5;
+    
+}
+.p-table-list{
+    position: relative;
+    left: 0%;
+    
+    /* border: 2px solid black; */
+}
+.dollar{
+font-size: 4em;
+font-weight: bolder;
+color: white;
+font-family: "Teko", sans-serif;
+}
+.wt-title{
+    font-size: 2em;
+font-weight: bold;
+    font-family: "Teko", sans-serif;
+    /* border: 1px solid black; */
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -17%;
+    top: 70%;  
+    letter-spacing: 3px;
+}
+.wt-title1{
+    font-size: 2em;
+font-weight: bold;
+    font-family: "Teko", sans-serif;
+    /* border: 1px solid black; */
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -28%;
+    top: 65%;  
+    letter-spacing: 3px;
+}
+/* SEC5 */
+.c1{
+background-color: red;
+}
+.c2{
+    font-family: "Teko", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 3px;
+
+}
+.c3{
+    font-family: "Teko", sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 3px;
+}
+.ourgallery1{
+    text-align: left;
+    letter-spacing: 2px;
+    color: red;
+    font-family: "Teko", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .pw1{
+  text-align: left;
+  font-size:4em;
+  letter-spacing: 6px;
+  color: white;
+  font-family: "Teko", sans-serif;
+  font-weight: 700;
+
+}
+/* sec6 */
+.leftboxs6{
+    font-family: "Teko", sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    color:black;
+    letter-spacing: 8px;
+    line-height: 1;
+
+}
+.rightboxs6{
+    position: relative;
+    top: 10%;
+}
+.txtse6{
+  text-align: center;
+}
+.sidepiccontainer{
+  /* position: relative; */
+  position: absolute;
+  left: 52%;
+  top: 770%;
+}
+/* sec7 */
+.mains7{
+  
+  --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-family: "Audiowide", sans-serif;
+  
+  padding-top: 120px;
+  padding-bottom: 90px;
+  background-size: cover;
+  background-image: url(https://thewebmax.org/zymmy/images/background/bg6.jpg);
+}
+.boxconsl{
+    position: absolute;
+    top: 1050%;
+    border: 3px solid red;
+}
+.contxt{
+    /* position: absolute;
+    top: 1070%; */
+    color: white;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 600;
+    letter-spacing: 4.5px;
+    /* font-size: 2em;  */
+    /* font-size: 25px; */
+}
+/* sec8*/
+.mains8{
+    background-size: cover;
+  background-image: url(slide1.jpg);
+}
+.sec8txt{
+    text-align: left;
+  font-size:4em;
+  letter-spacing: 6px;
+  color: black;
+  font-family: "Teko", sans-serif;
+  font-weight: 700;
+}
+.buttons8{
+    background-color: red;
+    color: white;
+    border-radius: 0%;
+    font-size: 20px;
+}
+.buttons8:hover{
+    background-color: grey;
+}
+/* sec9 */
+.s9{
+    font-family: "Teko", sans-serif;
+    letter-spacing: 5px;
+   
+}
+
+/* footer  */
+
+ .teko{
+    font-family: "Teko", sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+ }
+.input-group-text{
+            background-color: #0e1124;
+            color:  black;
+        }
+        .ft{
+            background-color: #d4aeff;
+        }
+        .ftr-list-item{
+            list-style: none;
+            display: inline-block;
+        }
+        .ftrin{
+            /* position: absolute; */
+            position: relative;
+            left: 30%;
+            top: -40%;
+        }
+.ftr{
+    background-color: whitesmoke;
+    color: black;
+}
+.ftricon{
+    display: inline-block;
+    list-style: none;
+    
+
+
+}
+.svg1{
+    color: red;
+    background-color: red;
+    
+}
+
+.lis{
+    font-size: small;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+
+}
+.li{
+    text-decoration: none;
+    color: black;
+
+}
+.li:hover{
+    color:  black;
+    text-decoration: none;
+
+}
+.cprht{
+    
+    text-align: center;
+}
+.ft-list{
+    display: inline-block;
+    list-style: none;
+    margin-left: 33px;
+   
+}
+</style>
+<body>
+
+  <!-- top-bar -->
+<div class="container-fluid border border-dark mb-0 ">
+    <div class="row ">
+        <div class="col mt-2">
+            <ul>
+                <li class="list-item txtclr">FOLLOW US -</li>
+                <li class="list-item border border-dark py-1 px-2"><svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg></li>
+                <li class="list-item border border-dark py-1 px-2"><svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                  </svg></li>
+                <li class="list-item border border-dark py-1 px-2"><svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                  </svg></li>
+                <li class="list-item border border-dark py-1 px-2"><svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+                  </svg></li>
+            </ul>
+            <div class="righttop  w-25">
+                <ul >
+                    <li class="list-item txtclr ">OUR TIMES</li>
+                    <li class="list-item ">- Mon - Sat :9am to 7pm</li>
+
+                </ul>
+
+            </div>
+        </div>
+        
+       
+
+    </div>
+
+</div>
+<!-- nv bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar1 w-100">
+        <img class="navbar-brand" href="#" src="logo-2-light.png" alt="logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto navtxt  ml-5 px-5 ">
+            <li class="nav-item active ">
+              <a class="nav-link" href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\file.html" style="color: red;">Home</a>
+            </li>
+            <li class="nav-item ml-4">
+              <a class="nav-link text-white" href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\about.html">About</a>
+            </li>
+            <li class="nav-item dropdown ml-4">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Gallery
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item " href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\gallery.html">Gallery</a>
+                
+              </div>
+            </li>
+            <li class="nav-item dropdown ml-4">
+                <a class="nav-link dropdown-toggle text-white" href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\classes.html" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Classes
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item " href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\classes.html">Classes </a>
+              </li>
+              <li class="nav-item dropdown ml-4">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Pages </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item " href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\services.html">Services</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item " href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\trainer.html">Trainer</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item " href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\pricing.html">Pricing</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown ml-4">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Blog
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item " href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\blog.html">Blog Grid</a>
+                </div>
+              </li>
+           
+          </ul>
+        
+           <!-- <input type="search"  placeholder=""> -->
+           <div class="input-group  ">
+            <input type="text" class="form-control bg-transparent  " aria-label="Dollar amount (with dot and two decimal places)" placeholder="Search..." >
+            <div class="input-group-append ">
+              <span class="input-group-text bg-transparent "><svg style="color: grey;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg></span>
+              <!-- <span class="input-group-text"></span> -->
+            </div>
+           
+     
+        </div> 
+      </nav>
+
+
+<!-- banner setion -->
+ <div class="container-fluid">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+        
+
+            <img src="slide1.jpg" class="d-block w-100 " alt="...">
+
+
+            
+                <p class="smalltext">Health</p>
+                <h1 class="txtcar">The Healthy way of life.</h1>
+
+          
+
+         
+                <p class="numcar">01</p>
+                <p class="lettercar">FITNESS</p>
+           
+               <div class="askbox  ">
+                  <p class="ml-4 mt-3 pr-4">Ask For Price</p> 
+               </div>
+               
+
+               
+           
+            <img src="d-1.png" alt="" class="img01 w-50 p-5 pb-5 ">
+
+                
+
+         
+        </div>
+          <div class="carousel-item ">
+            <img src="slide1.jpg" class="d-block w-100" alt="...">
+
+           
+
+            <div data-aos="fade-up">
+                <p class="smalltext">Exercise</p>
+                <h1 class="txtcar">Find a way or make one.</h1>
+            </div>
+
+            <div data-aos="fade-up">
+                <p class="numcar">02</p>
+                <p class="lettercar">EXERCISE</p>
+            </div>
+           
+            <img src="d-2.png" alt="" class="img1 w-50 p-5">
+            <div class="askbox  ">
+                <p class="ml-4 mt-3 pr-4">Ask For Price</p> 
+             </div>
+            
+
+          </div>
+          <div class="carousel-item">
+            <img src="slide1.jpg" class="d-block w-100 " alt="...">
+            <div data-aos="fade-up">
+                <p class="numcar">03</p>
+                <p class="lettercar">STRONG</p>
+            </div>
+          
+            <div data-aos="fade-up">
+                <p class="smalltext">Strongh</p>
+                <h1 class="txtcar">Forever fit, And Strong1! </h1>
+            </div>
+         
+            <img src="d-3.png" alt="" class="img1 w-50 p-5 mt-5 ">
+            
+            <div class="askbox  ">
+                <p class="ml-4 mt-3 pr-4">Ask For Price</p> 
+             </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+ </div>
+<!-- section2 -->
+<div class="continer-fluid ">
+<div class="container ">
+<div class="row">
+    <div class="col  p-0 mt-3">
+        <p class="leftboxs2">OUT STORY</p>
+    </div>
+    <div class="col  ">
+        <p class="rightboxs2 mt-4">30 YEARS OF EXPERIENCE IN FITNESS</p>
+        <p class="rightboxs2-2">Train with the best experts in bodybuilding field.</p>
+        <div class="btn buttons2 px-4  p-2 ml-5 ">Learn More</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-4  ">
+        <img class="w-100" src="pink.jpg" alt="">
+        <div class="aerobics">
+            <p class="aero">AEROBICS</p> 
+         </div>
+       
+    </div>
+    <div class="col-4 ">
+        <img class="w-100" src="pic2 (2).jpg" alt="">
+        <div class="aerobics">
+            <p class="aero">CROSSFIT</p> 
+         </div>
+    </div>
+    <div class="col-4 ">
+        <img class="w-100"  src="3.jpg" alt="">
+        <div class="aerobics">
+            <p class="aero">YOGA</p> 
+         </div>
+    </div>
+</div>
+</div>
+</div> 
+<!-- section3 -->
+<div class="container-fluid border mains3">
+    <div class="container-fluid p-5 bg-transparent">
+      <div class="row p-5">
+        <div class="col">
+          <p class="ourgallery"> _OUR GALLERY</p>
+          <h1 class="pw">POWERFULL WAYS <br>TO DO EXERCISE</h1>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col p-0  "><img class="w-100 im" src="https://thewebmax.org/zymmy/images/gallery/1.jpg" alt=""></div>
+        <div class="col p-0  "><img class="w-100 im" src="https://thewebmax.org/zymmy/images/gallery/2.jpg" alt=""></div>
+        <div class="col p-0  "><img class="w-100 im" src="https://thewebmax.org/zymmy/images/gallery/3.jpg" alt=""></div>
+        <div class="col p-0  "><img class="w-100 im" src="https://thewebmax.org/zymmy/images/gallery/4.jpg" alt=""></div>
+        <div class="col p-0  "><img class="w-100 im" src="https://thewebmax.org/zymmy/images/gallery/5.jpg" alt=""></div>
+        <div class="col p-0  "><img class="w-100 im" src="https://thewebmax.org/zymmy/images/gallery/6.jpg" alt=""></div>
+        
+        
+        
+      </div>
+
+      <div class="row">
+        <div class="col p-0  "><img class="w-100 im" src="https://thewebmax.org/zymmy/images/gallery/7.jpg" alt=""></div>
+        <div class="col p-0  "><img class="w-100 im" src="https://thewebmax.org/zymmy/images/gallery/8.jpg" alt=""></div>
+        <div class="col p-0  "><img class="w-100 im" src="https://thewebmax.org/zymmy/images/gallery/9.jpg" alt=""></div>
+        <div class="col p-0  "><img class="w-100 im" src="https://thewebmax.org/zymmy/images/gallery/10.jpg" alt=""></div>
+        <div class="col p-0  "><img class="w-100 im" src="https://thewebmax.org/zymmy/images/gallery/11.jpg" alt=""></div>
+        <div class="col p-0  "><img class="w-100 im" src="https://thewebmax.org/zymmy/images/gallery/12.jpg" alt=""></div>
+        
+        
+        
+      </div>
+    </div>
+  
+
+  </div>
+ <!-- section3end -->
+  <!-- section4 -->
+  <div class="container-fluid mains4">
+    <div class="container bg-transparent" >
+      <div class="row p-5">
+        <div class="col">
+          <p class="ourgallery"> _PRICING</p>
+          <h1 class="pw" style="color: black;">OUR PRICING<br>PLAN</h1>
+        </div>
+        
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-3  col-md-6  pt-3">
+          <img class="w-100 pt-5  pb-0 mt-5 ml-5" src="1.png" alt="">
+        </div>
+
+        <div class="col-lg-3  col-md-6 p-5 border border-light prombox">
+            <div class="pricing-table-1">
+                <div class="p-table-title">
+                    <h4 class="wt-title">
+                        STANDARD
+                    </h4>
+                </div>
+                <div class="p-table-list">
+                    <ul>
+                        <li class="promli">Service Locker Room</li>
+                        <li class="promli">Personal Trainer</li>
+                        <li class="promli">Morning Slot</li>
+                        <li class="promli">Yoga Classes</li>
+                        <li class="promli">Health Checkup</li>
+                        <li class="promli">Fitness Assessment</li>
+                    </ul>
+                </div>
+                <div class="p-table-price">
+                    <span class="dollar">$100</span>
+                    <p  style="font-weight: bold;">Per/month</p>
+                </div>
+                <div class="btn ml-0 px-4 py-3  button">
+                    <a href="about-1.html" class=" btneffect">Purchase Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 p-5 border border-light prombox">
+            <div class="pricing-table-1 w-100">
+                <div class="p-table-title">
+                    <h4 class="wt-title1 ">
+                        PROFESSIONAL
+                    </h4>
+                </div>
+                <div class="p-table-list">
+                    <ul>
+                        <li class="promli ">Service Locker Room</li>
+                        <li class="promli">Personal Trainer</li>
+                        <li class="promli">Morning Slot</li>
+                        <li class="promli">Yoga Classes</li>
+                        <li class="promli">Health Checkup</li>
+                        <li class="promli">Fitness Assessment</li>
+                    </ul>
+                </div>
+                <div class="p-table-price">
+                    <span class="dollar">$150</span>
+                    <p  style="font-weight: bold;">Per/month</p>
+                </div>
+                <div class="btn ml-0 px-4 py-3  button">
+                    <a href="about-1.html" class="btneffect">Purchase Now</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 p-5 border border-light prombox">
+            <div class="pricing-table-1 ">
+                <div class="p-table-title">
+                    <h4 class="wt-title">
+                        ULTIMATE
+                    </h4>
+                </div>
+                <div class="p-table-list">
+                    <ul >
+                        <li class="promli">Service Locker Room</li>
+                        <li class="promli">Personal Trainer</li>
+                        <li class="promli">Morning Slot</li>
+                        <li class="promli">Yoga Classes</li>
+                        <li class="promli">Health Checkup</li>
+                        <li class="promli">Fitness Assessment</li>
+                    </ul>
+                </div>
+                <div class="p-table-price">
+                    <span class="dollar ">$200</span>
+                    <p  style="font-weight: bold;">Per/month</p>
+                </div>
+                <div class="btn ml-0 px-4 py-3  button">
+                    <a href="about-1.html" class="btneffect">Purchase Now</a>
+                </div>
+            </div>
+        </div>                                
+
+    </div>
+    </div>
+  </div>
+   <!-- section4end -->
+<!-- section5 -->
+<div class="container-fluid " style="background-color: black;">
+    <div class="container">
+        <div class="row p-5">
+            <div class="col">
+              <p class="ourgallery1 mt-5"> _  OUR TIMETABLE</p>
+              <h1 class="pw1">CLASSES AND<br>TRAINING</h1>
+            </div>
+        <div class="row">
+            <div class="col">
+                <div class="card w-100 bg-transparent" style="width: 18rem;">
+                    <img src="m3.jpg" class="card-img-top " alt="...">
+                    <div class="card-body c1 py-0">
+                      <p class="card-text c2">
+                        RUNNING WAY
+                      </p>
+                      <p class="card-text c3 ">BY DAVID SMITH</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card w-100 bg-transparent" style="width: 18rem;">
+                    <img src="m4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body c1 py-0">
+                      <p class="card-text c2">CARDIO</p>
+                      <p class="card-text c3 ">BY KEVIN CROSSMAN</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card w-100 bg-transparent" style="width: 18rem;">
+                    <img src="m5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body c1 py-0">
+                      <p class="card-text c2">YOGA</p>
+                      <p class="card-text c3">BY JOHNNY SINS</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</div>
+<!-- section5end -->
+
+<!-- section6 -->
+
+<div class="container-fluid">
+    <div class="container p-1">
+      <div class="row mt-5">
+        <div class="col  p-0 ">
+            <p class="ourgallery1 "> _  OUR TRAINER</p>
+            <p class="leftboxs6">WE HAVE EXPERT TEAM MEMBERS</p>
+        </div>
+        <div class="col rightboxs6 ">
+           
+            <p class="mt-5">Our event unites athletic professionals and enthusiasts to pursue a great goal. We create and promote initiatives that enable people to become and remain physically active regardless and challenge inequality of access to physical activity.
+            </p>
+            <div class="btn buttons8 px-4 p-2">View All Trainer</div>
+            
+        </div>
+    </div>
+      <div class="row mt-4 w-50">
+        <div class="col-6  p-1 "><img class="w-100 " src="pic1.jpg" alt="">
+         <div class="txtse6"> <h3>RONAN</h3>
+          <h5><span style="color: orangered;">CARADIO TRAINER</span></h5></div>
+         
+        </div>
+        <div class="col-6  p-1 "><img class="w-100" src="pic2.jpg" alt="">
+          <div class="txtse6"> <h3>BRAYDEN</h3>
+            <h5><span style="color: red;">BOXING TRAINER</span></h5></div></div>
+        <div class="col-6  p-1 "><img class="w-100" src="4.jpg" alt="">
+          <div class="txtse6"> <h3>MARCO</h3>
+            <h5><span style="color: red;">DUMBBELL TRAINER</span></h5></div></div>
+        <div class="col-6  p-1 "><img class="w-100" src="pic4.jpg" alt=""> 
+          <div class="txtse6"> <h3>DEVIN</h3>
+            <h5><span style="color: red;">FITNESS TRAINER</span></h5></div></div>
+      </div>
+      <div class="row  w-100  sidepiccontainer py-5">
+        <div class="col-6 mt-5  ">
+          <img  class="  sideimg w-75 ml-5 mt-5 h-75 p-1" src="pic5.jpg" alt="">
+          <div class="txtse6"> <h3>ANTONIO</h3>
+            <h5><span style="color: red;">BODYBUILDING COACH</span></h5></div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- sec6end -->
+
+
+ <!-- section7 -->
+
+ <div class="container-fluid border mains7">
+    <div class="container-fluid p-5 bg-transparent">
+      <div class="row p-5">
+  <div class="col " style="z-index: 1000000;">
+    <img  src="https://thewebmax.org/zymmy/images/video/media2.jpg" alt="" >
+  </div>
+        
+        
+    </div>
+  <div class="row ">
+    <div class="boxconsl  w-50 h-50  p-4">
+        <span class="contxt  " style="font-size:2.5em;"> <br><br> <br>FREE CONSULTATION </span> 
+    </div>
+  </div>
+  
+  </div>
+  </div>
+
+  <!-- section7end -->
+
+
+<!-- section8 -->
+<div class="container-fluid mains8 ">
+    <div class="container py-5">
+        <div class="row py-5    ">
+            <div class="col">
+                <img src="client-logo-bg.png" alt="">
+            </div>
+            <div class="col">
+                <p class="sec8txt mt-5">
+                    WE ARE READY TO <br> HELP YOU TO GET <br> PERFECT FITNESS!    
+                </p>
+                <div class="btn buttons8 px-4 p-2">Get in touch</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- section8end -->
+
+
+<!-- section9 -->
+
+<div class="container-fluid mt-0 " style="background-image: url(slide1.jpg);">
+    <div class="row p-5 mt-5">
+        <div class="col">
+          <p class="ourgallery"> _ LATEST BLOG</p>
+          <h1 class="pw" style="color: black;font-size: 4em;">OUR RECENT <br>NEWS</h1>
+        </div>
+        
+      </div>
+    <div class="row s9">
+      <div class="col   p-4">
+        <img class="w-100 h-75" src="https://thewebmax.org/zymmy/images/blog/blog-bg/1.jpg" alt="">
+        <div class="img p-3 "  style="width: 90px; height: 90px;  border-radius: 50%; position: relative;top: -48%; left: 11%;">
+          <img style="border-radius: 50%;" src="1 (3).jpg" alt="abc">
+        </div>
+      <h3 style=" color:orangered;position: relative;top: -55%; left: 30%; ">BY SARAH ATKINS</h3>
+      <h1 style=" color:rgb(249, 247, 246);position: relative;top: -48%; left: 2%;">
+        FITNESS A BOOST BEGINS AT <br> THE END OF YOUR REST.</h1>
+  
+        <span style="color: orangered;text-decoration: none; position: relative;top: -45%;left: 5%;"><a style="color: orangered; text-decoration: none;" href="#">READ MORE</a></span>
+      
+      </div>
+      <div class="col  p-4">
+        <img class="w-100  h-75" src="https://thewebmax.org/zymmy/images/blog/blog-bg/2.jpg" alt="">
+        <div class="img p-3" style="width: 90px; height: 90px;  border-radius: 50%; position: relative;top: -48%; left: 11%;">
+          <img style="border-radius: 50%;" src="2 (3).jpg" alt="abc">
+        </div>
+      <h3 style=" color: red;position: relative;top: -55%; left: 30%;">BY SARAH ATKINS</h3>
+      <h1 style=" color:rgb(248, 247, 247);position: relative;top: -48%; left: 2%;">
+        GIVE YOUR FITNESS A BOOST <br> WITH OUR GYM.</h1>
+  
+        <span style="color: red;text-decoration: none; position: relative;top: -45%;left: 5%;"><a style="color: red; text-decoration: none;" href="#">READ MORE</a></span>
+      
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- section9end -->
+ 
+<!-- footer  -->
+<div class="container-fluid ftr">
+     
+    <div class="row p-0">
+        <div class="col-3 py-5 ">
+           <p class="teko" style="  font-weight: bold; color: black;" >ABOUT US</p>
+<p class="mt-3"> The longest running gym in Chicago. Owned and operated by a personal trainer with over 25 years experience.</p>
+    <ul> 
+        <li class="list-item border border-dark py-1 px-2 "><svg class="mb-1 svg1 bg-transparent" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook  " viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+          </svg></li>
+        <li class="list-item border border-dark py-1 px-2"><svg class="mb-1 svg1 bg-transparent" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter " viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+          </svg></li>
+        <li class="list-item border border-dark py-1 px-2 "><svg class="mb-1 svg1 bg-transparent" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+          </svg></li>
+        <li class="list-item border border-dark py-1 px-2"><svg class="mb-1 svg1 bg-transparent" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest " viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+          </svg></li>
+      </ul>
+
+
+        </div>
+        <div class="col-3 py-5">
+            <ul>
+                <li class="lis teko" style="font-weight: bold; color: black;text-decoration: none;font-size: 1.5em; ">GET IN TOUCH</li>
+                <li class="lis mt-4" ><p><svg class="svg1 bg-transparent" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg><span class="ml-3">92 Princess Road, parkvenue Greater London, NW18JR, UK.</span> </p></li>
+                <li class="lis mt-4 " ><p ><svg class="svg1 bg-transparent" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                  </svg><span class="ml-3">(+291) 912-3456-073</span></p></li>
+
+                <li class="lis mt-4" ><p class="ml-0 "><svg class="svg1 bg-transparent"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                  </svg><span class="ml-3 ">contact123@gmail.com</span></p></li>
+            </ul>   
+        </div>
+        <div class="col-3 py-5">
+            <ul>
+                <li class="lis teko" style="font-weight: bold;font-size: 1.5em; color: black;text-decoration: none; ">USEFUL LINKS</li>
+                <li class="lis mt-4" ><a class="li" href="">About</a></li>
+                <li class="lis mt-2"><a class="li" href="">Gallery</a></li>
+                <li class="lis mt-2"><a class="li" href="">Blog</a></li>
+                <li class="lis mt-2"><a class="li" href="">FAQ</a></li>
+                <li class="lis mt-2"><a class="li" href="">Contact Us</a></li>
+               
+
+            </ul>
+        </div>
+        <div class="col-3 ml-0 py-5">
+            <ul>
+                <li class="lis teko" style="font-weight: bold;font-size: 1.5em; color: black;text-decoration: none; ">NEWS LETTER</li>
+                <p class="mt-4" style="font-size: 13px; line-height: 1.5;"> Our newsletters contain useful blog posts, case studies, “how to”s, and ways to help you grow your business.</p>
+            
+
+            </ul>
+            <div class="input-group w-100 mt-5">
+                <input type="email" class=" w-100 p-2 ml-4  mr-1 " placeholder="Enter Email Address"  >
+                <!-- <div class="input-group-append"> -->
+                  <span style="position: absolute ; left: 90%; top: 20%;"   class="bg-transparent mb-1  "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                  </svg></span>
+                  <!-- <span class="input-group-text">0.00</span> -->
+                <!-- </div> -->
+              </div>
+        </div>
+    
+       
+    </div>
+    <hr>
+    <div class="row  ">
+        <div class="col">
+            <ul class=" px-4">
+                <li class="ft-list  "> 
+                    <img src="logo-2.png" alt="">
+                </li>
+                <li class="ft-list px-5  ">                      © Copyright 2022 MUHAMMAD ASWAB All rights reserved</li>
+                <li class="ft-list px-5  ">Terms & Condition / Privacy Policy / Help</li>
+            </ul>
+        </div>
+
+
+
+<!-- <div class="col  cprht  ">© Copyright 2022 MUHAMMAD ASWAB All rights reserved.</div> -->
+      
+    </div>
+
+
+</div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</html>

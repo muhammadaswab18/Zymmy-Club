@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZYMMY</title>
+    <link rel="icon" type="image/x-icon" href="logo-2.png" style="height: 50%; width:50%;border-radius: 50%;">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+</head>
+<style>
+    
+body{
+    overflow-x: hidden;
+}
+
+.topbar{
+    background-color: transparent;
+    position:absolute;
+    top: 0%;
+}    
+.list-item{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+.righttop{
+    position: absolute;
+    left: 70%;
+    top: 7%;
+
+}
+.txtclr{
+    color: red;
+    font-weight: 400;
+}
+.navbar1{
+    background-color: transparent;
+    position:absolute;
+    top: 10%;
+    /* background-color: black; */
+    /* position: fixed; 
+    z-index: 1000000; */
+}
+.navtxt{
+    font-family: "Teko", sans-serif;
+    font-size: 25px;
+    
+     
+}
+.input-group{
+    width: 15%;
+    /* background-color: black; */
+    color: gray;
+}
+.form-control{
+  border: 1px solid rgb(24, 24, 24);
+    border-right: none !important;
+    
+}
+.input-group-text{
+    border-left: none !important;
+  border: 1px solid rgb(24, 24, 24);
+
+    
+
+}   
+.gallery{
+    font-size: 4em;
+    font-weight: 600;
+    font-family: "Audiowide", serif;
+    color: white;
+    position: absolute;
+    top: 45%;
+    letter-spacing: 4px;
+}
+.hg{
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 2;
+    font-family: "Teko", serif;
+    color: white;
+    position: absolute;
+    top: 60%;
+    letter-spacing: 4px;
+}
+/* section 1*/
+.mains4{
+  
+  --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-family: "Heebo", sans-serif;
+  
+  /* padding-top: 100px;
+  padding-bottom: 90px; */
+  background-size: cover;
+  background-image: url(slide1.jpg);
+}
+.prombox{
+  background-color: red ;
+}
+.button{
+  border-radius: 0;
+  color: white;
+  background-color: black;
+}
+.btneffect{
+  color: white;
+  text-decoration: none;
+
+}
+.btneffect:hover{
+  color: white;
+  text-decoration: none;
+  transform: rotate(20deg);
+}
+.promli{
+    font-weight:bold;
+    margin-left: -5%;
+    font-size: 14px;
+    line-height: 2.5;
+    
+}
+.p-table-list{
+    position: relative;
+    left: 0%;
+    
+    /* border: 2px solid black; */
+}
+.dollar{
+font-size: 4em;
+font-weight: bolder;
+color: white;
+font-family: "Teko", sans-serif;
+}
+.wt-title{
+    font-size: 2em;
+font-weight: bold;
+    font-family: "Teko", sans-serif;
+    /* border: 1px solid black; */
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -17%;
+    top: 70%;  
+    letter-spacing: 3px;
+}
+.wt-title1{
+    font-size: 2em;
+font-weight: bold;
+    font-family: "Teko", sans-serif;
+    /* border: 1px solid black; */
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -28%;
+    top: 65%;  
+    letter-spacing: 3px;
+}
+.ourgallery{
+    text-align: center;
+    letter-spacing: 2px;
+    color: red;
+    font-family: "Teko", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .pw{
+  text-align: center;
+  font-size:4em;
+  letter-spacing: 6px;
+  color: white;
+  font-family: "Teko", sans-serif;
+  font-weight: 700;
+
+}
+/* footer  */
+.teko{
+    font-family: "Teko", sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+ }
+.input-group-text{
+            background-color: #0e1124;
+            color:  black;
+        }
+        .ft{
+            background-color: #d4aeff;
+        }
+        .ftr-list-item{
+            list-style: none;
+            display: inline-block;
+        }
+        .ftrin{
+            /* position: absolute; */
+            position: relative;
+            left: 30%;
+            top: -40%;
+        }
+.ftr{
+    background-color:black;
+    color:white;
+}
+.ftricon{
+    display: inline-block;
+    list-style: none;
+    
+
+
+}
+.svg1{
+    color: red;
+    background-color: red;
+    
+}
+
+.lis{
+    font-size: small;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+
+}
+.ul{
+    font-family: "Teko", sans-serif;
+}
+.li{
+    text-decoration: none;
+    color: white;
+    /* font-family: "Teko", sans-serif; */
+
+}
+.li:hover{
+    color:  black;
+    text-decoration: none;
+
+}
+.cprht{
+    
+    text-align: center;
+}
+.ft-list{
+    display: inline-block;
+    list-style: none;
+    margin-left: 33px;
+   
+}
+</style>
+<body>
+
+    
+
+  
+    
+<!-- nv bar -->
+ <div class="container-fluid " style="background-color: black;">
+    <img class="w-100 h-75" src="https://thewebmax.org/zymmy/images/banner/1.jpg" alt="">
+
+      <!-- top-bar -->
+<div class="container-fluid bg-transparent topbar">
+    <div class="row  ">
+        <div class="col mt-2">
+            <ul>
+                <li class="list-item txtclr">FOLLOW US -</li>
+                <li class="list-item border border-dark py-1 px-2"><svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg></li>
+                <li class="list-item border border-dark py-1 px-2"><svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                  </svg></li>
+                <li class="list-item border border-dark py-1 px-2"><svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                  </svg></li>
+                <li class="list-item border border-dark py-1 px-2"><svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+                  </svg></li>
+            </ul>
+            <div class="righttop  w-25">
+                <ul >
+                    <li class="list-item txtclr ">OUR TIMES</li>
+                    <li class="list-item ">- Mon - Sat :9am to 7pm</li>
+
+                </ul>
+
+            </div>
+        </div>
+        
+       
+
+    </div>
+
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light navbar1 w-100 px-5">
+    <img class="navbar-brand" href="#" src="logo-2-light.png" alt="logo">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto navtxt  ml-5 px-5 ">
+        <li class="nav-item active ">
+          <a class="nav-link" href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\file.html" style="color: red;">Home</a>
+        </li>
+        <li class="nav-item ml-4">
+          <a class="nav-link text-white" href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\about.html">About</a>
+        </li>
+        <li class="nav-item dropdown ml-4">
+          <a class="nav-link dropdown-toggle text-white" href="" role="button" data-toggle="dropdown" aria-expanded="false">
+            Gallery
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item " href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\gallery.html">Gallery </a>
+        </li>
+        <li class="nav-item dropdown ml-4">
+            <a class="nav-link dropdown-toggle text-white" href="" role="button" data-toggle="dropdown" aria-expanded="false">
+              Classes
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item " href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\classes.html">Classes </a>
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown ml-4">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item " href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\services.html">Services</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item " href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\trainer.html">Trainer</a>
+              
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item " href="#">Pricing</a>
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown ml-4">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Blog
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item " href="C:\Users\LEGEND\OneDrive\Desktop\Zymmy Club\blog.html">Blog Grid</a>
+              
+            </div>
+          </li>
+       
+      </ul>
+    
+       <!-- <input type="search"  placeholder=""> -->
+       <div class="input-group  ">
+        <input type="text" class="form-control bg-transparent  " aria-label="Dollar amount (with dot and two decimal places)" placeholder="Search..." >
+        <div class="input-group-append ">
+          <span class="input-group-text bg-transparent "><svg style="color: grey;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg></span>
+          <!-- <span class="input-group-text"></span> -->
+        </div>
+       
+ 
+    </div> 
+  </nav>
+</div>
+
+<!-- banner setion -->
+ <div class="container">
+    <p class="gallery">
+       PRICING
+    </p>
+    <p class="hg">
+        Home <span style="color: red;"> . Pricing</span>
+    </p>
+ </div>
+
+<!-- section 1 -->
+
+
+<div class="container-fluid mains4">
+    <div class="container bg-transparent" >
+      <div class="row p-5">
+        <div class="col">
+          <p class="ourgallery"> _PRICING</p>
+          <h1 class="pw" style="color: black;">OUR PRICING<br>PLAN</h1>
+        </div>
+        
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-3  col-md-6  pt-3">
+          <img class="w-100 pt-5  pb-0 mt-5 ml-5" src="1.png" alt="">
+        </div>
+
+        <div class="col-lg-3  col-md-6 p-5 border border-light prombox">
+            <div class="pricing-table-1">
+                <div class="p-table-title">
+                    <h4 class="wt-title">
+                        STANDARD
+                    </h4>
+                </div>
+                <div class="p-table-list">
+                    <ul>
+                        <li class="promli">Service Locker Room</li>
+                        <li class="promli">Personal Trainer</li>
+                        <li class="promli">Morning Slot</li>
+                        <li class="promli">Yoga Classes</li>
+                        <li class="promli">Health Checkup</li>
+                        <li class="promli">Fitness Assessment</li>
+                    </ul>
+                </div>
+                <div class="p-table-price">
+                    <span class="dollar">$100</span>
+                    <p  style="font-weight: bold;">Per/month</p>
+                </div>
+                <div class="btn ml-0 px-4 py-3  button">
+                    <a href="about-1.html" class=" btneffect">Purchase Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 p-5 border border-light prombox">
+            <div class="pricing-table-1 w-100">
+                <div class="p-table-title">
+                    <h4 class="wt-title1 ">
+                        PROFESSIONAL
+                    </h4>
+                </div>
+                <div class="p-table-list">
+                    <ul>
+                        <li class="promli ">Service Locker Room</li>
+                        <li class="promli">Personal Trainer</li>
+                        <li class="promli">Morning Slot</li>
+                        <li class="promli">Yoga Classes</li>
+                        <li class="promli">Health Checkup</li>
+                        <li class="promli">Fitness Assessment</li>
+                    </ul>
+                </div>
+                <div class="p-table-price">
+                    <span class="dollar">$150</span>
+                    <p  style="font-weight: bold;">Per/month</p>
+                </div>
+                <div class="btn ml-0 px-4 py-3  button">
+                    <a href="about-1.html" class="btneffect">Purchase Now</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 p-5 border border-light prombox">
+            <div class="pricing-table-1 ">
+                <div class="p-table-title">
+                    <h4 class="wt-title">
+                        ULTIMATE
+                    </h4>
+                </div>
+                <div class="p-table-list">
+                    <ul >
+                        <li class="promli">Service Locker Room</li>
+                        <li class="promli">Personal Trainer</li>
+                        <li class="promli">Morning Slot</li>
+                        <li class="promli">Yoga Classes</li>
+                        <li class="promli">Health Checkup</li>
+                        <li class="promli">Fitness Assessment</li>
+                    </ul>
+                </div>
+                <div class="p-table-price">
+                    <span class="dollar ">$200</span>
+                    <p  style="font-weight: bold;">Per/month</p>
+                </div>
+                <div class="btn ml-0 px-4 py-3  button">
+                    <a href="about-1.html" class="btneffect">Purchase Now</a>
+                </div>
+            </div>
+        </div>                                
+
+    </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- footer  -->
+
+
+  <div class="container-fluid ftr mt-5" >
+     
+    <div class="row p-0">
+        <div class="col-3 py-5 ">
+           <p class="teko" style="  font-weight: bold; color: red;" >ABOUT US</p>
+<p class="mt-3"> The longest running gym in Chicago. Owned and operated by a personal trainer with over 25 years experience.</p>
+    <ul> 
+        <li class="list-item border border-dark py-1 px-2 "><svg class="mb-1 svg1 bg-transparent" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook  " viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+          </svg></li>
+        <li class="list-item border border-dark py-1 px-2"><svg class="mb-1 svg1 bg-transparent" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter " viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+          </svg></li>
+        <li class="list-item border border-dark py-1 px-2 "><svg class="mb-1 svg1 bg-transparent" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+          </svg></li>
+        <li class="list-item border border-dark py-1 px-2"><svg class="mb-1 svg1 bg-transparent" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest " viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+          </svg></li>
+      </ul>
+
+
+        </div>
+        <div class="col-3 py-5">
+            <ul>
+                <li class="lis teko" style="font-weight: bold; color: red;text-decoration: none;font-size: 1.5em; ">GET IN TOUCH</li>
+                <li class="lis mt-4" ><p><svg class="svg1 bg-transparent" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg><span class="ml-3">92 Princess Road, parkvenue Greater London, NW18JR, UK.</span> </p></li>
+                <li class="lis mt-4 " ><p ><svg class="svg1 bg-transparent" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                  </svg><span class="ml-3">(+291) 912-3456-073</span></p></li>
+
+                <li class="lis mt-4" ><p class="ml-0 "><svg class="svg1 bg-transparent"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                  </svg><span class="ml-3 ">contact123@gmail.com</span></p></li>
+            </ul>   
+        </div>
+        <div class="col-3 py-5">
+            <ul>
+                <li class="lis teko" style="font-weight: bold;font-size: 1.5em; color: red;text-decoration: none; ">USEFUL LINKS</li>
+                <li class="lis mt-4" ><a class="li" href="">About</a></li>
+                <li class="lis mt-2"><a class="li" href="">Gallery</a></li>
+                <li class="lis mt-2"><a class="li" href="">Blog</a></li>
+                <li class="lis mt-2"><a class="li" href="">FAQ</a></li>
+                <li class="lis mt-2"><a class="li" href="">Contact Us</a></li>
+               
+
+            </ul>
+        </div>
+        <div class="col-3 ml-0 py-5">
+            <ul>
+                <li class="lis teko" style="font-weight: bold;font-size: 1.5em; color: red;text-decoration: none; ">NEWS LETTER</li>
+                <p class="mt-4" style="font-size: 13px; line-height: 1.5;"> Our newsletters contain useful blog posts, case studies, “how to”s, and ways to help you grow your business.</p>
+            
+
+            </ul>
+            <div class="input-group w-100 mt-5">
+                <input type="email" class=" w-100 p-2 ml-4  mr-1 " placeholder="Enter Email Address"  >
+                  <span style="position: absolute ; left: 90%; top: 20%;"   class="bg-transparent mb-1  "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                  </svg></span>
+                
+              </div>
+        </div>
+    
+       
+    </div>
+    <div class="row  ">
+        <div class="col">
+            <div class="row p-5  border-top  border-light">
+                <div class="col  cprht  ">© 2022 Copyright  MUHAMMAD ASWAB All rights reserved.</div>
+            </div>
+           </div>
+
+
+
+      
+    </div>
+
+
+</div>  
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</html>
